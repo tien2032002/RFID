@@ -21,6 +21,8 @@ int timer5_counter=0;
 int timer6_flag=0;
 int timer6_counter=0;
 
+
+
 void setTimer1(int duration) {
 	timer1_counter=duration;
 	timer1_flag=0;

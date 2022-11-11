@@ -36,7 +36,7 @@ void button_reading ( void ){
 	for ( int i = 0; i < N0_OF_BUTTONS ; i ++){
 		debounceButtonBuffer3 [i] = debounceButtonBuffer2 [i];
 		debounceButtonBuffer2 [i] = debounceButtonBuffer1 [i];
-		debounceButtonBuffer1 [i] = HAL_GPIO_ReadPin(GPIOA, BUTTON1_Pin*pow(2,i));
+		debounceButtonBuffer1 [i] = HAL_GPIO_ReadPin(GPIOA, LOCK_Pin*pow(2,i));
 		if( debounceButtonBuffer1 [i] == debounceButtonBuffer2 [i] && debounceButtonBuffer2[i]==debounceButtonBuffer3[i]) {
 			if (buttonBuffer[i] != debounceButtonBuffer3 [i]) {
 				buttonBuffer [i] = debounceButtonBuffer3 [i];

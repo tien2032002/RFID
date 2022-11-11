@@ -58,6 +58,18 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define SIGNAL_Pin GPIO_PIN_5
+#define SIGNAL_GPIO_Port GPIOA
+#define BUZZER_Pin GPIO_PIN_6
+#define BUZZER_GPIO_Port GPIOA
+#define LOCK_Pin GPIO_PIN_12
+#define LOCK_GPIO_Port GPIOB
+#define UNLOCK_Pin GPIO_PIN_13
+#define UNLOCK_GPIO_Port GPIOB
+#define REGISTER_Pin GPIO_PIN_14
+#define REGISTER_GPIO_Port GPIOB
+#define RESET_Pin GPIO_PIN_15
+#define RESET_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
